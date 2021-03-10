@@ -1,0 +1,10 @@
+file_put_contents('/tmp/test.txt', 'テスト用テキストファイル');  //テキストファイルを生成
+$email->addAttachment(new \SendGrid\Mail\Attachment(base64_encode(file_get_contents('/tmp/test.txt')), "text/plain", "test.txt"));
+
+Attachmentのコンストラクタは、Attachment($content, $type, $filename, $disposition, $content_id)
+
+・$content:Base64エンコードされたコンテンツ（入力必須）
+・$type:添付ファイルのMIMEタイプ（テキストファイルならtext/plain、PNG画像ファイルならimage/pngなど、適切に設定します。）
+・$filename:受信したときのファイル名（入力必須）
+・$disposition:添付ファイルがどのように表示されるか設定（inlineかattachmentを選択、デフォルトはattachment）
+・$content_id:dispositionがinlineのとき、メールの本文中に画像ファイルを表示するためにファイルに割り当てるID

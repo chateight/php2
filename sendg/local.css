@@ -1,0 +1,43 @@
+.body {
+  background: #fff8ff;
+  margin: 10px auto;
+  width: 65%;
+  padding: 3px;
+  text-align: left;
+  font-family: sans-serif,"ＭＳ Ｐゴシック";
+}
+.col {
+  background: #ffffff;
+  color: #008080;
+  margin: 10px;
+  text-align: left;
+  padding: 10px;
+  text-align: left;
+  border-radius: 10px;
+  box-shadow: 0 5px 3px -3px gray;
+}
+.center{
+    text-align: center;
+    color: #888888;
+}
+.tpos{
+  margin: 10px;
+//  border: solid 2px green;
+  text-align: left;
+  color: #888888;
+}
+.btn-squ {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #668ad8;/*ボタン色*/
+  color: #FFF;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+}
+.btn-squ:active {
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+  border-bottom: none;/*線を消す*/
+}
