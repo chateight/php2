@@ -53,8 +53,8 @@ $response = $sendgrid->send($email);
 {
 define('DB_HOST', 'mysql57.isehara-3lv.sakura.ne.jp');
 define('DB_NAME', 'isehara-3lv_members');
-define('DB_USER', 'isehara-3lv');
-define('DB_PASSWORD', 'a9VjCSPq');
+define('DB_USER', '<user>');
+define('DB_PASSWORD', '<pw>');
 
 // 文字化け対策
 $options = array(PDO::MYSQL_ATTR_INIT_COMMAND=>"SET CHARACTER SET 'utf8'");
